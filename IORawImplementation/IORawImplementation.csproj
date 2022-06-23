@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="DLLTest">
+      <HintPath>..\..\DLLTest\Debug\DLLTest.dll</HintPath>
+    </Reference>
+    <Reference Include="IORawDll">
+      <HintPath>..\..\IORawDll\Debug\IORawDll.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
